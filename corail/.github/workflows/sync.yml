@@ -1,0 +1,21 @@
+name: Sync HackMD to GitHub
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Exécuter tous les jours à minuit
+  workflow_dispatch:  # Permettre un déclenchement manuel
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: pip install requests PyGithub
+      - name: Run sync script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HACKMD_API_KEY: ${{ secrets.HACKMD_API_KEY }}
+        run: python corail/scripts/sync_hackmd_to_github.py

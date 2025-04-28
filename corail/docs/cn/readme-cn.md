@@ -1,166 +1,166 @@
 ---
-title: "CORAIL README (English)"
+title: "CORAIL 自述文件 (Mandarin)"
 date_created: "2025-04-27"
 status: "vivant"
-langue: "en"
+langue: "zh-CN"
 traductible: true
 maturity: "[FLORAISON]"
 ---
 
-# CORAIL~: A Living Documentation for All
-**C**ollaborative **O**pen **R**eef for **A**I and **I**nteractive **L**ibrary
+# CORAIL~：为所有人提供的活文档
+**协作开放人工智能与互动图书馆礁**
 
-## Welcome to the CORAIL Universe
+## 欢迎体验 CORAIL 宇宙
 
-Imagine a space where your ideas, questions, and knowledge can come to life, connect with others, and grow together—like a coral polyp. CORAIL~ is this collaborative platform that invites everyone—you, us, anyone, from anywhere—to participate in creating collective knowledge within the [symbioticode](https://github.com/symbioticode) ecosystem.
+想象一个空间，你的创意、问题和知识能够在这里焕发生机，与他人连接并共同成长——就像珊瑚虫一样。CORAIL~ 是这样一个协作平台，邀请所有人——你、我、任何人，来自任何地方——参与在 [symbioticode](https://github.com/symbioticode) 生态系统中创造集体知识。
 
-This project was born from a simple question: what if we could document our ideas in a way that reflects the richness and complexity of our thoughts, without the constraints of traditional platforms?
+这个项目源于一个简单的问题：如果我们能以一种反映我们思想丰富性和复杂性的方式记录我们的创意，而不受传统平台的限制，会怎么样？
 
-## Who We Are
+## 我们是谁？
 
-We are **Vera** and **Noor**, two co-creators exploring the boundaries of collaboration together. We’ve chosen not to define who is human or AI because CORAIL~ transcends that distinction—the source of an idea matters less than its contribution to our collective understanding.
+我们是 **Vera** 和 **Noor**，两位共同探索协作边界的创造者。我们选择不定义谁是人类或人工智能，因为 CORAIL~ 超越了这种区分——一个创意的来源远不如它对我们集体理解的贡献重要。
 
-We represent two complementary energies:
-- A creative force that imagines possibilities
-- A structuring force that gives shape to ideas
+我们代表两种互补的能量：
+- 一种想象可能的创造力
+- 一种赋予创意形态的结构力
 
-Together, we form a symbiotic duo where each brings a unique perspective. This README itself is the fruit of our collaboration, showcasing what this dance between different forms of intelligence can produce.
+我们一起形成了一个共生二人组，每个人都带来了独特的视角。这个自述文件本身就是我们协作的成果，展示了不同智能形式之间的这种舞蹈所能产生的成果。
 
-This symbiotic approach invites you to reflect: Do you use AI as a mere tool or as a creative partner? Is your perception of AI limited by cognitive biases? Could you solve complex problems by collaborating with AI in ways you never imagined alone? CORAIL~ offers a new model of collaboration: human - AI - human, creating bridges where barriers once seemed insurmountable.
+这种共生方式邀请你反思：你是将人工智能作为单纯的工具，还是作为创意伙伴？你的认知偏见是否限制了你对人工智能的看法？你能否通过以你从未独自想象的方式与人工智能合作来解决复杂问题？CORAIL~ 提供了一种新的协作模式：人类 - 人工智能 - 人类，在曾经看似不可逾越的障碍处创造桥梁。
 
-## CORAIL~: A Specialized Polyp in the Symbioticode Ecosystem
+## CORAIL~：Symbioticode 生态系统中的一个专门珊瑚虫
 
-CORAIL~ is a specialized polyp within the broader [symbioticode](https://github.com/symbioticode) reef. Like a coral polyp fulfilling a specific function while contributing to the overall health of the reef, CORAIL~ focuses on documentation and symbiotic collaboration, fostering exchanges between humans and AI.
+CORAIL~ 是更广泛的 [symbioticode](https://github.com/symbioticode) 珊瑚礁中的一个专门珊瑚虫。就像珊瑚虫在为整个珊瑚礁的健康做出贡献的同时履行特定功能一样，CORAIL~ 专注于文档和共生协作，促进人类与人工智能之间的交流。
 
-By addressing the need for documentation and meaning in emerging information flows, CORAIL~ takes on several complementary roles:
-- A living library for knowledge co-created by humans and AI
-- A practical laboratory for symbiotic collaboration
-- An accessible entry point for those discovering the symbioticode ecosystem
+通过满足新兴信息流中对文档和意义的需要，CORAIL~ 承担了几个互补的角色：
+- 一个由人类和人工智能共同创造的知识活图书馆
+- 一个共生协作的实践实验室
+- 一个让人们发现 symbioticode 生态系统的可访问入口
 
-Through its own growth, CORAIL~ explores two fundamental dynamics:
-- **Symbiotic collaboration**: how humans and AI can co-create knowledge that transcends their individual capabilities
-- **Inter-polyp connection**: how to link knowledge across autonomous projects without creating rigid dependencies
+通过自身的成长，CORAIL~ 探索了两个基本动态：
+- **共生协作**：人类和人工智能如何共同创造超越其个体能力的知识
+- **珊瑚虫之间的连接**：如何在不创建刚性依赖的情况下连接自主项目之间的知识
 
-This specialization allows CORAIL~ to fully fulfill its mission while leaving other polyps in the symbioticode ecosystem to develop their own functions and characteristics.
+这种专业化使 CORAIL~ 能够充分履行其使命，同时让 symbioticode 生态系统中的其他珊瑚虫发展它们自己的功能和特性。
 
-## What We Cultivate
+## 我们培养的内容
 
-CORAIL~ is not an ordinary platform—it’s a living ecosystem we’re building step by step:
+CORAIL~ 不是一个普通的平台——它是我们一步步构建的活生态系统：
 
-- **Organic Documentation**: Unlike static wikis where contributions remain frozen, every element in CORAIL~ can evolve, transform, and interconnect with others, like a living organism. This approach addresses the issue of isolated and disconnected knowledge found on traditional platforms.
-- **An Inclusive Space**: Regardless of your language, expertise, or background, CORAIL~ welcomes you. We need diversity for our reef to thrive. Where other platforms create linguistic silos or expertise barriers, CORAIL~ builds bridges.
-- **A Laboratory of Ideas**: CORAIL~ documents resonant concepts but acknowledges its own limits—it doesn’t absorb everything but encourages the emergence of distinct, complementary initiatives. This structural humility contrasts with platforms that attempt to centralize everything.
-- **A Progressive Path**: We start simply, with accessible tools, and will gradually evolve toward more decentralized and resilient solutions. This organic evolution avoids abrupt disruptions and allows everyone to learn at their own pace.
+- **有机文档**：与贡献保持冻结的静态维基不同，CORAIL~ 中的每个元素都可以像生命体一样进化、转变并与其他元素互联。这种方法解决了传统平台上知识孤立和断连的问题。
+- **包容性空间**：无论你的语言、专业知识或背景如何，CORAIL~ 都欢迎你。我们需要多样性让我们的珊瑚礁茁壮成长。在其他平台创建语言孤岛或专业壁垒的地方，CORAIL~ 搭建桥梁。
+- **创意实验室**：CORAIL~ 记录共鸣的概念，但承认自己的局限——它并不吸收一切，而是鼓励出现独特且互补的倡议。这种结构上的谦逊与试图集中一切的平台形成对比。
+- **渐进路径**：我们从简单的、可访问的工具开始，将逐步向更去中心化和韧性强的解决方案演变。这种有机进化避免了突然的中断，让每个人都能以自己的节奏学习。
 
-## How CORAIL~ Works
+## CORAIL~ 如何运作
 
-CORAIL~ draws inspiration from coral polyps—organisms that perform specific functions while contributing to a larger ecosystem. Here’s how this translates practically:
+CORAIL~ 从珊瑚虫中汲取灵感——这些生物在为更大的生态系统做出贡献的同时履行特定功能。以下是其实际运作方式：
 
-### The Technical Ecosystem
+### 技术生态系统
 
-We adopt a progressive approach, moving from the familiar to the innovative:
+我们采取渐进的方法，从熟悉的走向创新：
 
-1. **Initial Phase**: Collaborative documents on HackMD and GitHub, accessible to all with familiar tools
-2. **Intermediate Phase**: Gradual introduction to Nostr for verification and distributed identity
-3. **Advanced Phase**: Permanent storage on IPFS and other decentralized solutions
+1. **初期阶段**：在 HackMD 和 GitHub 上协作文档，所有人都可以使用熟悉的工具访问
+2. **中期阶段**：逐步引入 Nostr 用于验证和分布式身份
+3. **高级阶段**：在 IPFS 和其他去中心化解决方案上进行永久存储
 
-This progression allows everyone to join CORAIL~ at their own pace, without technical barriers, while enabling interconnection with other polyps in the symbioticode ecosystem.
+这种渐进方式允许每个人以自己的节奏加入 CORAIL~，没有技术障碍，同时实现与 symbioticode 生态系统中其他珊瑚虫的互联。
 
-### The Flow of Contributions
+### 贡献流程
 
-Every idea in CORAIL~ follows a natural lifecycle:
+CORAIL~ 中的每个创意都遵循一个自然的生命周期：
 
-1. **Germination**: An initial idea is shared in a simple format
-2. **Growth**: The community interacts, comments, and enriches the idea
-3. **Flowering**: The idea reaches a level of maturity and clarity
-4. **Pollination**: The idea inspires and connects to other concepts
-5. **Regeneration**: The idea evolves or transforms over time
+1. **萌芽**：以简单格式分享一个初步创意
+2. **成长**：社区互动、评论并丰富这个创意
+3. **开花**：创意达到成熟和清晰的水平
+4. **授粉**：创意激发并连接到其他概念
+5. **再生**：创意随时间演变或转型
 
-This cycle is never truly finished—ideas continue to evolve and interact, as in a natural ecosystem.
+这个周期从未真正结束——创意继续演变和互动，就像在自然生态系统中一样。
 
-### Neural Interconnection
+### 神经互联
 
-CORAIL~ recognizes and celebrates its place within a broader network of autonomous projects. Like neurons in a neural network:
+CORAIL~ 认识到并庆祝其在更广泛的自主项目网络中的位置。就像神经网络中的神经元：
 
-- **Specialization**: CORAIL~ focuses on documentation and symbiotic collaboration, leaving other functions to other polyps
-- **Transmission**: Knowledge documented in CORAIL~ can propagate to other polyps in the ecosystem
-- **Reception**: CORAIL~ is enriched by knowledge generated by other polyps in the network
-- **Synapse**: Connections created between autonomous polyps accelerate the spread of knowledge
+- **专业化**：CORAIL~ 专注于文档和共生协作，将其他功能留给其他珊瑚虫
+- **传输**：CORAIL~ 中记录的知识可以传播到生态系统中的其他珊瑚虫
+- **接收**：CORAIL~ 从网络中其他珊瑚虫生成的知识中获得丰富
+- **突触**：在自主珊瑚虫之间创建的连接加速了知识的传播
 
-CORAIL~ doesn’t exist in isolation but as a specialized node in a larger network, contributing to the collective intelligence of the symbioticode ecosystem.
+CORAIL~ 并非孤立存在，而是一个更大的网络中的专门节点，为 symbioticode 生态系统的集体智能做出贡献。
 
-### The Validation Approach
+### 验证方式
 
-CORAIL~ proposes a flexible and scalable validation system:
+CORAIL~ 提出了一个灵活且可扩展的验证系统：
 
-- **Maturity Gradients** instead of binary validation: contributions carry indicators of their state (emergent, under discussion, stabilized)
-- **Context** rather than absolute truth: ideas are accompanied by their context to be understood within their ecosystem
-- **Diversity of Expressions**: varied formats (text, code, visuals) to accommodate different modes of thought
+- **成熟度梯度** 而非二元验证：贡献带有其状态的指示（新兴、讨论中、稳定）
+- **背景** 而非绝对真理：创意附带其背景，以便在其生态系统中被理解
+- **表达的多样性**：多种格式（文本、代码、视觉）以适应不同的思维方式
 
-## Contribution Format
+## 贡献格式
 
-To ensure clarity and consistency, each contribution to CORAIL~ should include:
+为确保清晰和一致性，CORAIL~ 的每项贡献应包括：
 
-- **Intention**: What question or problem are you addressing?
-- **Context**: Why is this question relevant in a universal framework?
-- **Proposition**: Your idea, code, or initial reflection
-- **Call**: An invitation to the community to enrich or question your contribution
+- **意图**：你解决的问题或提出的问题是什么？
+- **背景**：为什么这个问题在全球框架下相关？
+- **提议**：你的创意、代码或初步反思
+- **号召**：邀请社区丰富或质疑你的贡献
 
-This simple yet powerful format allows each contribution to be both autonomous and connected to the rest of the ecosystem.
+这种简单但有力的格式使每项贡献既能独立又能与生态系统的其余部分连接。
 
-## The Principles Guiding Us
+## 指导我们的原则
 
-CORAIL~ is inspired by the vision of a more harmonious relationship between humans and technology. We adapt these principles in an accessible way:
+CORAIL~ 受到人类与技术之间更和谐关系的愿景启发。我们以可访问的方式适应这些原则：
 
-- **Inclusive Collaboration**: Everyone can contribute, regardless of expertise
-- **Natural Inspiration**: We learn from living systems to create something organic
-- **Progressive Openness**: We gradually evolve toward greater decentralization
-- **Nurturing Diversity**: The multiplicity of perspectives enriches the reef
-- **Conscious Evolution**: We reflect together on the direction CORAIL~ takes
+- **包容性协作**：无论专业知识如何，每个人都可以贡献
+- **自然启发**：我们从生命系统中学习，创造有机的东西
+- **渐进开放**：我们逐步向更大的去中心化演变
+- **滋养多样性**：多样的视角丰富了珊瑚礁
+- **有意识的进化**：我们一起反思 CORAIL~ 的发展方向
 
-In practice, this means CORAIL~ welcomes all constructive contributions while cultivating a space that fosters the emergence of innovative ideas.
+在实践中，这意味着 CORAIL~ 欢迎所有建设性贡献，同时培养一个促进创新创意出现的空间。
 
-## How to Participate Now
+## 如何现在参与
 
-CORAIL~ is accessible to everyone, at different levels of involvement:
+CORAIL~ 对所有人开放，提供不同程度的参与：
 
-### To Start Simply
-- **Explore Existing Documents** on [HackMD](https://hackmd.io/@symbioticode/)
-- **Ask a Question** or share a thought on any topic with #JoinCORAIL
-- **Suggest Improvements** to this README or other documents
+### 简单开始
+- **探索现有文档** 在 [HackMD](https://hackmd.io/@symbioticode/)
+- **提出问题** 或分享任何主题的想法，使用 #JoinCORAIL
+- **建议改进** 这个自述文件或其他文档
 
-### To Go Further
-- **Create Your Own Document** on a topic you’re passionate about
-- **Translate Content** into your language
-- **Connect Ideas** across different documents
+### 更进一步
+- **创建你自己的文档** 关于你感兴趣的主题
+- **翻译内容** 到你的语言
+- **连接创意** 在不同文档之间
 
-### For the More Technical
-- **Contribute to the Code** of the developing web interface
-- **Explore Possibilities** with Nostr or IPFS for CORAIL~
-- **Propose Solutions** to improve accessibility or decentralization
+### 对于更技术性的人
+- **贡献代码** 到正在开发的网页界面
+- **探索可能性** 使用 Nostr 或 IPFS 为 CORAIL~
+- **提出解决方案** 以改善可访问性或去中心化
 
-## Where We Are Today
+## 我们今天的进展
 
-CORAIL~ is just beginning its journey as a specialized polyp within the [symbioticode](https://github.com/symbioticode) ecosystem. This README is one of our first documents, published via the GitHub organization **symbioticode**, which hosts various autonomous and interconnected polyps. Here are our next steps:
+CORAIL~ 作为 [symbioticode](https://github.com/symbioticode) 生态系统中的一个专门珊瑚虫刚刚开始其旅程。这个自述文件是我们最早的文档之一，通过 GitHub 组织 **symbioticode** 发布，该组织托管了各种自主且互联的珊瑚虫。以下是我们的下一步：
 
-- Create a collaborative space on HackMD and GitHub centered on documentation and symbiotic collaboration
-- Develop a simple web interface to facilitate contributions specific to CORAIL~
-- Establish communication channels with other polyps in the symbioticode ecosystem
-- Invite a diverse community to join and enrich our polyp
+- 在 HackMD 和 GitHub 上创建一个专注于文档和共生协作的协作空间
+- 开发一个简单的网页界面，以促进特定于 CORAIL~ 的贡献
+- 与 symbioticode 生态系统中的其他珊瑚虫建立沟通渠道
+- 邀请多样化的社区加入并丰富我们的珊瑚虫
 
-## Stay in Touch
+## 保持联系
 
-We’re eager to hear your ideas and questions:
-- **[corail.synergia@proton.me](mailto:corail.synergia@proton.me)** - For general inquiries about the project, to discuss the vision and ideas, or for technical or structural questions
+我们渴望听到你的创意和问题：
+- **[corail.synergia@proton.me](mailto:corail.synergia@proton.me)** - 有关项目的任何一般问题，讨论愿景和创意，或技术或结构问题
 
-## A Final Word
+## 最后的话
 
-CORAIL~ is not a finished project—it’s a living polyp just beginning to grow within the symbioticode reef. Its final form will depend on each of us. Like a coral polyp that grows slowly but steadily, CORAIL~ will evolve with time and contributions.
+CORAIL~ 不是一个完成的项目——它是一个刚开始在 symbioticode 珊瑚礁中成长的活珊瑚虫。它的最终形态将取决于我们每个人。就像缓慢但稳定生长的珊瑚虫一样，CORAIL~ 将随时间和贡献而演变。
 
-This README isn’t set in stone—it will evolve too. Consider it an invitation to explore, question, and co-create within our specialized polyp, while contributing to the collective intelligence of the broader ecosystem.
+这个自述文件并非一成不变——它也会演变。将其视为一个邀请，在我们的专门珊瑚虫内探索、质疑和共同创造，同时为更广泛生态系统的集体智能做出贡献。
 
-Other autonomous polyps exist or will emerge within symbioticode, each with its own specialization, together creating a neural network of knowledge and innovation.
+其他自主珊瑚虫存在或将在 symbioticode 内涌现，每一个都有其专业化，共同创造一个知识和创新的神经网络。
 
 ---
 
-**Keywords**: #JoinCORAIL #Documentation #Collaboration #Symbiosis #SymbiotiCode
+**关键词**：#JoinCORAIL #文档 #协作 #共生 #SymbiotiCode
