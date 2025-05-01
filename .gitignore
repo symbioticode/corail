@@ -42,6 +42,7 @@ logs/
 *.pem
 *.key
 keys/private/
+corail/scripts/sync_hackmd_to_github.py
 
 # Fichiers générés
 node_modules/
