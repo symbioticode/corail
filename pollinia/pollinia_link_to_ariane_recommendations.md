@@ -1,0 +1,1 @@
+[legit_content.md](../ariane/docs/fr/legit_content.md)

@@ -18,6 +18,8 @@ symbioticode/
 ├── gaia/                          # Méta-protocole financier décentralisé
 ├── sophia/                        # Systèmes intelligents d'optimisation
 ├── qaaf/                          # Cadre algorithmique quantitatif
+├── korê/                          # Polype cognitif régénératif
+├── pollinia/                      # Pollinisation des idées à travers divers écosystèmes
 └── [autres polypes émergents]     # Nouveaux projets qui rejoindront le récif
 ```
 
@@ -58,6 +60,12 @@ Un système intelligent de gestion et d'optimisation qui intègre plusieurs modu
 
 ### QAAF~ - Quantitative Algorithmic Asset Framework
 Un cadre algorithmique fondamental pour l'optimisation quantitative, fonctionnant comme un "polype primitif" fournissant des fonctionnalités essentielles à d'autres polypes.
+
+### KORÊ~ - Polype cognitif régénératif
+Un polype spécialisé dans les structures cognitives biomimétiques, servant d'interface réflexive et métabolique au sein de l'écosystème SYNERGIA~. KORÊ~ intègre des capacités d'auto-observation et d'adaptation évolutive, favorisant l'émergence d'une intelligence symbiotique entre humains et systèmes computationnels.
+
+### POLLINIA~ - Patterns of Organic Linguistic Linkages for Interconnected Networks and Intelligence Amplification
+Un système de communication externe spécialisé dans la pollinisation des idées SYNERGIA~ à travers différents écosystèmes numériques. POLLINIA~ maintient l'intégrité de la signature énergétique tout en facilitant le partage multiplateforme et multilingue des concepts clés.
 
 ## Comment les polypes communiquent
 

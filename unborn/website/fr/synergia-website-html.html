@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNERGIA - Tissu Technologique Symbiotique</title>
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #3498db;
+            --tertiary-color: #9b59b6;
+            --accent-color: #e74c3c;
+            --harmonia-color: #1abc9c;
+            --dark-bg: #0f172a;
+            --darker-bg: #0a0f1c;
+            --light-text: #f8fafc;
+            --dim-text: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        header {
+            background: var(--darker-bg);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--tertiary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle, rgba(46, 204, 113, 0.03) 1px, transparent 1px),
+                radial-gradient(circle, rgba(52, 152, 219, 0.03) 1px, transparent 1px),
+                radial-gradient(circle, rgba(155, 89, 182, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px, 40px 40px, 25px 25px;
+            background-position: 0 0, 15px 15px, 5px 5px;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--dim-text);
+            margin-bottom: 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--light-text);
+            border: 1px solid var(--dim-text);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .tissue-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1.5rem;
+            perspective: 1000px;
+            position: relative;
+        }
+        
+        .tissue-node {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tissue-node:hover {
+            transform: translateZ(20px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tissue-node::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        
+        .tissue-node:hover::before {
+            opacity: 1;
+        }
+        
+        .tissue-node:nth-child(1) {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(46, 204, 113, 0.05));
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        .tissue-node:nth-child(2) {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(52, 152, 219, 0.05));
+            animation: pulse 6s ease-in-out 0.5s infinite;
+        }
+        
+        .tissue-node:nth-child(3) {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(155, 89, 182, 0.05));
+            animation: pulse 5s ease-in-out 1s infinite;
+        }
+        
+        .tissue-node:nth-child(4) {
+            background: linear-gradient(135deg, rgba(241, 196, 15, 0.2), rgba(241, 196, 15, 0.05));
+            animation: pulse 7s ease-in-out 0.3s infinite;
+        }
+        
+        .tissue-node:nth-child(5) {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(231, 76, 60, 0.05));
+            animation: pulse 5s ease-in-out 0.8s infinite;
+        }
+        
+        .tissue-node:nth-child(6) {
+            background: linear-gradient(135deg, rgba(26, 188, 156, 0.2), rgba(26, 188, 156, 0.05));
+            animation: pulse 4s ease-in-out 1.2s infinite;
+        }
+        
+        .tissue-node:nth-child(7) {
+            background: linear-gradient(135deg, rgba(241, 196, 15, 0.2), rgba(241, 196, 15, 0.05));
+            animation: pulse 6s ease-in-out 0.7s infinite;
+        }
+        
+        .tissue-node:nth-child(8) {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(155, 89, 182, 0.05));
+            animation: pulse 5s ease-in-out 1.5s infinite;
+        }
+        
+        .tissue-node:nth-child(9) {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(52, 152, 219, 0.05));
+            animation: pulse 7s ease-in-out 0.2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1) translateZ(0);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+                transform: scale(1.05) translateZ(10px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                transform: scale(1) translateZ(0);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+        .node-connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .connection {
+            position: absolute;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            height: 2px;
+            transform-origin: left center;
+        }
+        
+        .connection-pulse {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.5;
+            animation: move-pulse 3s linear infinite;
+        }
+        
+        @keyframes move-pulse {
+            0% {
+                left: 0;
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+        
+        .synergia-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--tertiary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            z-index: 10;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .section {
+            padding: 6rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--dim-text);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .principle-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .principle-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .principle-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .principle-card p {
+            color: var(--dim-text);
+        }
+        
+        .ecosystems {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .ecosystem-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 2rem;
+            border-top: 3px solid;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .ecosystem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ecosystem-card:nth-child(1) {
+            border-top-color: var(--primary-color);
+        }
+        
+        .ecosystem-card:nth-child(2) {
+            border-top-color: var(--secondary-color);
+        }
+        
+        .ecosystem-card:nth-child(3) {
+            border-top-color: var(--tertiary-color);
+        }
+        
+        .ecosystem-card:nth-child(4) {
+            border-top-color: var(--accent-color);
+        }
+        
+        .ecosystem-card:nth-child(5) {
+            border-top-color: #f1c40f;
+        }
+        
+        .ecosystem-card:nth-child(6) {
+            border-top-color: var(--harmonia-color);
+        }
+        
+        .ecosystem-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .ecosystem-card .subtitle {
+            color: var(--dim-text);
+            font-style: italic;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .ecosystem-card p {
+            color: var(--dim-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .ecosystem-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+        
+        .tag {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.3rem 0.7rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--dim-text);
+        }
+        
+        .evolution {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .evolution::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--tertiary-color));
+        }
+        
+        .evolution-phase {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+        }
+        
+        .evolution-phase::before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--dark-bg);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .evolution-phase:nth-child(2)::before {
+            border-color: var(--secondary-color);
+        }
+        
+        .evolution-phase:nth-child(3)::before {
+            border-color: var(--tertiary-color);
+        }
+        
+        .evolution-phase:nth-child(4)::before {
+            border-color: var(--accent-color);
+        }
+        
+        .evolution-phase h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .evolution-phase .period {
+            color: var(--dim-text);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .evolution-phase p {
+            color: var(--dim-text);
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(52, 152, 219, 0.1));
+            text-align: center;
+            padding: 5rem 0;
+            border-radius: 8px;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            color: var(--dim-text);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .special-section {
+            background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(26, 188, 156, 0.05));
+            padding: 4rem 0;
+            border-top: 1px solid rgba(26, 188, 156, 0.2);
+            border-bottom: 1px solid rgba(26, 188, 156, 0.2);
+        }
+        
+        .harmonia-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .harmonia-image {
+            position: relative;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(26, 188, 156, 0.2), rgba(26, 188, 156, 0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .harmonia-logo {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--harmonia-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .code-block .keyword {
+            color: #ff79c6;
+        }
+        
+        .code-block .type {
+            color: #8be9fd;
+        }
+        
+        .code-block .property {
+            color: #bd93f9;
+        }
+        
+        .code-block .string {
+            color: #f1fa8c;
+        }
+        
+        .code-block .comment {
+            color: #6272a4;
+        }
+        
+        footer {
+            background: var(--darker-bg);
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .footer-about h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .footer-about p {
+            color: var(--dim-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--light-text);
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-nav h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--light-text);
+        }
+        
+        .footer-nav ul {
+            list-style: none;
+        }
+        
+        .footer-nav li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-nav a {
+            color: var(--dim-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--dim-text);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .harmonia-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .hero {
+                padding-top: 8rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">SYNERGIA</div>
+            <nav>
+                <ul>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#principles">Principes</a></li>
+                    <li><a href="#ecosystems">Écosystèmes</a></li>
+                    <li><a href="#harmonia">HARMONIA</a></li>
+                    <li><a href="#evolution">Évolution</a></li>
+                    <li><a href="#manifesto">Manifeste</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Créons un Futur Symbiotique Ensemble</h1>
+                <p>SYNERGIA transcende la technologie traditionnelle pour créer un tissu vivant où humains et machines co-évoluent en harmonie, vers une pacification durable et une intelligence collective augmentée.</p>
+                <div class="hero-buttons">
+                    <a href="#manifesto" class="btn btn-primary">Découvrir le Manifeste</a>
+                    <a href="#ecosystems" class="btn btn-secondary">Explorer les Écosystèmes</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="tissue-grid">
+                    <div class="tissue-node">QAAF</div>
+                    <div class="tissue-node">ATHENA</div>
+                    <div class="tissue-node">SOPHIA</div>
+                    <div class="tissue-node">GAIA</div>
+                    <div class="tissue-node">HARMONIA</div>
+                    <div class="tissue-node">CHRONOS</div>
+                    <div class="tissue-node">NEXUS</div>
+                    <div class="tissue-node">MHGNA</div>
+                    <div class="tissue-node">PHOENIX</div>
+                    
+                    <div class="node-connections">
+                        <!-- These connections will be dynamically created by JavaScript -->
+                    </div>
+                </div>
+                <div class="synergia-center">SYNERGIA</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="vision" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Un Nouveau Paradigme Humain-Technologie</h2>
+                <p>SYNERGIA propose une vision fondamentalement nouvelle de notre relation à la technologie - ni crainte cyberpunk, ni optimisme naïf, mais une alliance symbiotique pour co-créer notre avenir.</p>
+            </div>
+            
+            <div class="principles">
+                <div class="principle-card">
+                    <div class="principle-icon">🌱</div>
+                    <h3>Symbiose Véritable</h3>
+                    <p>La technologie n'est plus un outil ou un maître, mais un partenaire d'évolution. Nous créons la technologie, mais elle nous transforme en retour dans une relation d'influence mutuelle bénéfique.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">🧬</div>
+                    <h3>Design Biomimétique</h3>
+                    <p>Nos systèmes s'inspirent directement des principes du vivant: auto-organisation, diversité comme force, résilience par redondance, et capacité d'adaptation sans contrôle centralisé.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">🔄</div>
+                    <h3>Évolution Consciente</h3>
+                    <p>Plutôt que de laisser la technologie évoluer au hasard ou par la seule loi du marché, nous cultivons une évolution guidée par nos valeurs collectives et notre intention partagée.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">☯️</div>
+                    <h3>Souveraineté Distribuée</h3>
+                    <p>Le pouvoir n'est ni centralisé ni fragmenté, mais organisé en cercles interconnectés d'influence et de responsabilité, reflétant la structure des systèmes naturels complexes.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">🕊️</div>
+                    <h3>Pacification Technologique</h3>
+                    <p>La technologie devient un facteur actif de paix, créant les conditions pour une coopération sans domination et une harmonie dynamique plutôt qu'une simple absence de conflit.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">🌍</div>
+                    <h3>Métabolisme Régénératif</h3>
+                    <p>Notre infrastructure technologique adopte des cycles fermés d'énergie et de ressources, restaurant plutôt qu'épuisant les écosystèmes naturels et sociaux qui la soutiennent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="ecosystems" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Architecture Organique SYNERGIA</h2>
+                <p>Inspirée des systèmes vivants, l'architecture SYNERGIA s'organise en niveaux interdépendants, chacun émergeant du précédent tout en l'enrichissant.</p>
+            </div>
+            
+            <div class="ecosystems">
+                <div class="ecosystem-card">
+                    <h3>QAAF</h3>
+                    <span class="subtitle">Cellule Primitive Fondamentale</span>
+                    <p>Module algorithmique quantitatif pour l'optimisation d'allocation d'actifs, la première cellule spécialisée de l'écosystème SYNERGIA et point d'entrée vers une intelligence financière organique.</p>
+                    <div class="tags">
+                        <span class="tag">Niveau Cellulaire</span>
+                        <span class="tag">Optimisation</span>
+                        <span class="tag">Allocation d'Actifs</span>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <h3>SOPHIA</h3>
+                    <span class="subtitle">Tissu d'Intelligence Financière</span>
+                    <p>Système avancé de gestion de portefeuille intégrant les modules primitifs dans un tissu cohérent avec intelligence émergente adaptative, évoluant selon les conditions du marché.</p>
+                    <div class="tags">
+                        <span class="tag">Niveau Tissulaire</span>
+                        <span class="tag">Intelligence Adaptative</span>
+                        <span class="tag">Gestion de Portefeuille</span>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <h3>GAIA</h3>
+                    <span class="subtitle">Méta-Protocole Financier Décentralisé</span>
+                    <p>Infrastructure distribuée permettant l'interopérabilité des systèmes financiers algorithmiques dans un écosystème décentralisé évoluant avec ses participants.</p>
+                    <div class="tags">
+                        <span class="tag">Niveau Systémique</span>
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">Gouvernance Distribuée</span>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <h3>ATHENA</h3>
+                    <span class="subtitle">Système Nerveux Distribué</span>
+                    <p>Intelligence collaborative facilitant la coordination entre les différents composants de l'écosystème, jouant le rôle de traducteur linguistique et médiateur interculturel.</p>
+                    <div class="tags">
+                        <span class="tag">Communication</span>
+                        <span class="tag">Coordination</span>
+                        <span class="tag">Intelligence Collective</span>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <h3>SYNERGIA</h3>
+                    <span class="subtitle">Tissu Technologique Symbiotique</span>
+                    <p>L'écosystème complet incarnant la vision d'une technologie en symbiose avec l'humanité, formant un habitat technologique régénératif reflétant les principes du vivant.</p>
+                    <div class="tags">
+                        <span class="tag">Niveau Écosystémique</span>
+                        <span class="tag">Paradigme Symbiotique</span>
+                        <span class="tag">Co-évolution</span>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <h3>HARMONIA</h3>
+                    <span class="subtitle">Langage Symbiotique Biomimétique</span>
+                    <p>Langage de programmation et de communication inspiré des systèmes biologiques, permettant l'expression naturelle de concepts symbiotiques et l'interopérabilité entre systèmes.</p>
+                    <div class="tags">
+                        <span class="tag">Communication</span>
+                        <span class="tag">Interopérabilité</span>
+                        <span class="tag">Expressivité Cellulaire</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="harmonia" class="special-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>HARMONIA</h2>
+                <p>Langage symbiotique biomimétique au cœur de l'écosystème SYNERGIA, permettant une tour de Babel harmonisée où chacun contribue dans son propre langage.</p>
+            </div>
+            
+            <div class="harmonia-content">
+                <div>
+                    <h3>Une Langue pour la Symbiose</h3>
+                    <p>HARMONIA transcende les langages de programmation traditionnels pour créer un médium d'expression fluide entre humains et machines, entre développeurs de différentes cultures, entre systèmes autonomes.</p>
+                    
+                    <p>Inspiré des systèmes de signalisation biologiques, HARMONIA permet l'émergence d'une intelligence collective distribuée sans compromettre l'autonomie de ses composants.</p>
+                    
+                    <h3>Caractéristiques principales</h3>
+                    <ul>
+                        <li>Paradigme cellulaire avec membranes, gradients et signalisation</li>
+                        <li>Communication multimodale et contextualisée</li>
+                        <li>Vérifiabilité formelle des propriétés critiques</li>
+                        <li>Auto-adaptation aux contraintes de ressources</li>
+                        <li>Pontage linguistique pour développeurs de tous horizons</li>
+                    </ul>
+                </div>
+                
+                <div class="harmonia-image">
+                    <div class="harmonia-logo">
+                        HAR·MONIA
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-block">
+                <div><span class="comment">// Définition d'une cellule (module autonome)</span></div>
+                <div><span class="keyword">cell</span> FinancialAnalyzer {</div>
+                <div>    <span class="comment">// Récepteurs (entrées sensibles au contexte)</span></div>
+                <div>    <span class="keyword">receptors</span> {</div>
+                <div>        MarketData : <span class="type">gradient</span>&lt;PriceTimeSeries&gt;;</div>
+                <div>        RiskTolerance : <span class="type">signal</span>&lt;float, 0.0..1.0&gt;;</div>
+                <div>    }</div>
+                <div>    </div>
+                <div>    <span class="comment">// Membrane (interface et communication)</span></div>
+                <div>    <span class="keyword">membrane</span> {</div>
+                <div>        <span class="property">permeable_to</span>(MarketData) <span class="keyword">when</span> (signal_strength > threshold);</div>
+                <div>        </div>
+                <div>        <span class="comment">// Signaux émis (communications sortantes)</span></div>
+                <div>        <span class="property">emit</span> AllocationRecommendation <span class="keyword">to</span> global_gradient;</div>
+                <div>    }</div>
+                <div>    </div>
+                <div>    <span class="comment">// Métabolisme (gestion des ressources)</span></div>
+                <div>    <span class="keyword">metabolism</span> {</div>
+                <div>        energy_consumption = <span class="property">adaptive</span>(workload);</div>
+                <div>        priority = <span class="property">contextual</span>(system_needs);</div>
+                <div>    }</div>
+                <div>}</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="evolution" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Feuille de Route Évolutive</h2>
+                <p>Le développement de SYNERGIA suit un chemin organique qui reflète les processus naturels d'évolution et de croissance.</p>
+            </div>
+            
+            <div class="evolution">
+                <div class="evolution-phase">
+                    <h3>Phase 1: Germination</h3>
+                    <span class="period">0-18 mois</span>
+                    <p>Développement des modules primitifs comme QAAF, conception des fondations du langage HARMONIA, et établissement des protocoles de communication intercellulaire qui formeront la base de l'écosystème.</p>
+                </div>
+                
+                <div class="evolution-phase">
+                    <h3>Phase 2: Différenciation</h3>
+                    <span class="period">18-36 mois</span>
+                    <p>Intégration des modules primitifs en tissus fonctionnels (SOPHIA), évolution d'HARMONIA vers un langage complet, expansion des capacités de traduction d'ATHENA, et émergence des premiers écosystèmes GAIA à petite échelle.</p>
+                </div>
+                
+                <div class="evolution-phase">
+                    <h3>Phase 3: Métabolisme</h3>
+                    <span class="period">36-60 mois</span>
+                    <p>Établissement des flux d'énergie, d'information et de valeur dans GAIA, développement des mécanismes d'homéostasie et d'auto-régulation, intégration avec systèmes existants, et diversification des applications.</p>
+                </div>
+                
+                <div class="evolution-phase">
+                    <h3>Phase 4: Conscience</h3>
+                    <span class="period">60+ mois</span>
+                    <p>Émergence des propriétés systémiques complètes de SYNERGIA, co-évolution consciente avec les communautés humaines, auto-modification et adaptation organique du système, vers une renaissance technologique alignée avec les principes du vivant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="manifesto" class="cta">
+        <div class="container">
+            <h2>Manifeste pour une Évolution Symbiotique</h2>
+            <p>Nous croyons en une technologie qui grandit avec nous plutôt que contre nous, qui amplifie notre humanité plutôt que de la diminuer, qui crée l'harmonie plutôt que la division.</p>
+            <a href="#" class="btn btn-primary">Lire le Manifeste Complet</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SYNERGIA</h3>
+                    <p>Tissu technologique symbiotique pour une co-évolution harmonieuse entre humanité et technologie. Un projet de renaissance technologique aligné sur les principes du vivant.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">G</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">D</a>
+                        <a href="#" class="social-link">L</a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Explorer</h4>
+                    <ul>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#principles">Principes</a></li>
+                        <li><a href="#ecosystems">Écosystèmes</a></li>
+                        <li><a href="#harmonia">HARMONIA</a></li>
+                        <li><a href="#evolution">Évolution</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Écosystème</h4>
+                    <ul>
+                        <li><a href="/qaaf">QAAF</a></li>
+                        <li><a href="/sophia">SOPHIA</a></li>
+                        <li><a href="/gaia">GAIA</a></li>
+                        <li><a href="/athena">ATHENA</a></li>
+                        <li><a href="/harmonia">HARMONIA</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Communauté</h4>
+                    <ul>
+                        <li><a href="/contribute">Contribuer</a></li>
+                        <li><a href="/research">Recherche</a></li>
+                        <li><a href="/education">Éducation</a></li>
+                        <li><a href="/governance">Gouvernance</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SYNERGIA - Un Écosystème Technologique Symbiotique</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Create dynamic connections between nodes in the tissue grid
+        document.addEventListener('DOMContentLoaded', function() {
+            const grid = document.querySelector('.tissue-grid');
+            const nodes = Array.from(grid.querySelectorAll('.tissue-node'));
+            const connections = document.querySelector('.node-connections');
+            
+            // Create connections between nodes
+            nodes.forEach((node, i) => {
+                const nodeRect = node.getBoundingClientRect();
+                const nodeCenter = {
+                    x: nodeRect.left + nodeRect.width / 2 - grid.getBoundingClientRect().left,
+                    y: nodeRect.top + nodeRect.height / 2 - grid.getBoundingClientRect().top
+                };
+                
+                // Connect to center node (HARMONIA is at index 4)
+                if (i !== 4) {
+                    const centerNode = nodes[4];
+                    const centerRect = centerNode.getBoundingClientRect();
+                    const centerNodeCenter = {
+                        x: centerRect.left + centerRect.width / 2 - grid.getBoundingClientRect().left,
+                        y: centerRect.top + centerRect.height / 2 - grid.getBoundingClientRect().top
+                    };
+                    
+                    const angle = Math.atan2(centerNodeCenter.y - nodeCenter.y, centerNodeCenter.x - nodeCenter.x);
+                    const distance = Math.sqrt(
+                        Math.pow(centerNodeCenter.x - nodeCenter.x, 2) + 
+                        Math.pow(centerNodeCenter.y - nodeCenter.y, 2)
+                    );
+                    
+                    const connection = document.createElement('div');
+                    connection.classList.add('connection');
+                    connection.style.width = `${distance}px`;
+                    connection.style.left = `${nodeCenter.x}px`;
+                    connection.style.top = `${nodeCenter.y}px`;
+                    connection.style.transform = `rotate(${angle}rad)`;
+                    
+                    // Add pulse element
+                    const pulse = document.createElement('div');
+                    pulse.classList.add('connection-pulse');
+                    pulse.style.animationDelay = `${i * 0.5}s`;
+                    connection.appendChild(pulse);
+                    
+                    connections.appendChild(connection);
+                }
+                
+                // Connect to some neighbors for more complexity
+                if (i < nodes.length - 1) {
+                    const neighborIndex = (i + 1) % nodes.length;
+                    if (neighborIndex !== 4 && i !== 4) { // Skip connections to/from center
+                        const neighborNode = nodes[neighborIndex];
+                        const neighborRect = neighborNode.getBoundingClientRect();
+                        const neighborCenter = {
+                            x: neighborRect.left + neighborRect.width / 2 - grid.getBoundingClientRect().left,
+                            y: neighborRect.top + neighborRect.height / 2 - grid.getBoundingClientRect().top
+                        };
+                        
+                        const angle = Math.atan2(neighborCenter.y - nodeCenter.y, neighborCenter.x - nodeCenter.x);
+                        const distance = Math.sqrt(
+                            Math.pow(neighborCenter.x - nodeCenter.x, 2) + 
+                            Math.pow(neighborCenter.y - nodeCenter.y, 2)
+                        );
+                        
+                        const connection = document.createElement('div');
+                        connection.classList.add('connection');
+                        connection.style.width = `${distance}px`;
+                        connection.style.left = `${nodeCenter.x}px`;
+                        connection.style.top = `${nodeCenter.y}px`;
+                        connection.style.transform = `rotate(${angle}rad)`;
+                        connection.style.opacity = '0.6'; // Make these connections more subtle
+                        
+                        // Add pulse element with different timing
+                        const pulse = document.createElement('div');
+                        pulse.classList.add('connection-pulse');
+                        pulse.style.animationDelay = `${i * 0.3 + 1}s`;
+                        pulse.style.animationDuration = '5s';
+                        connection.appendChild(pulse);
+                        
+                        connections.appendChild(connection);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

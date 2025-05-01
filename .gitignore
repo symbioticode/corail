@@ -1,0 +1,72 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environnements virtuels Python
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Fichiers de configuration IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Dossiers de build et distribution
+build/
+dist/
+*.egg-info/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Fichiers de logs
+logs/
+*.log
+
+# Clés privées et secrets
+*.pem
+*.key
+keys/private/
+
+# Fichiers générés
+node_modules/
+generated/
+
+# Fichiers personnels et brouillons
+drafts/
+personal/
+corail/scripts/
+gaia/docs/
+ariane/docs/
+harmonia/docs/
+harmonia/poc/
+corail/docs/fr/guides/
+qaaf/docs/
+
+unborn
+.private/
+
+# Fichiers de données volumineux
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# Sauf les exemples et templates
+!examples/*.csv
+!templates/*.xlsx

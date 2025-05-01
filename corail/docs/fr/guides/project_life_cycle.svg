@@ -1,0 +1,112 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- Titre -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Cycle de Vie d'un Projet SYNERGIA dans CORAIL
+  </text>
+
+  <!-- Grand cercle du cycle -->
+  <circle cx="400" cy="320" r="220" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+
+  <!-- Étapes du cycle -->
+  <!-- 1. Germination -->
+  <circle cx="400" cy="100" r="65" fill="#D4F0F0" stroke="#2E8B57" stroke-width="2"/>
+  <text x="400" y="85" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E8B57">GERMINATION</text>
+  <text x="400" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Idée initiale</text>
+  <text x="400" y="120" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">partagée</text>
+
+  <!-- 2. Croissance -->
+  <circle cx="610" cy="225" r="65" fill="#E6F5D0" stroke="#6B8E23" stroke-width="2"/>
+  <text x="610" y="210" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#6B8E23">CROISSANCE</text>
+  <text x="610" y="230" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Développement</text>
+  <text x="610" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">collaboratif</text>
+
+  <!-- 3. Floraison -->
+  <circle cx="610" cy="415" r="65" fill="#FFE6F0" stroke="#C71585" stroke-width="2"/>
+  <text x="610" y="400" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#C71585">FLORAISON</text>
+  <text x="610" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Maturité</text>
+  <text x="610" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">fonctionnelle</text>
+
+  <!-- 4. Pollinisation -->
+  <circle cx="400" cy="540" r="65" fill="#F0E6FF" stroke="#8A2BE2" stroke-width="2"/>
+  <text x="400" y="525" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#8A2BE2">POLLINISATION</text>
+  <text x="400" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Connexion avec</text>
+  <text x="400" y="560" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">d'autres projets</text>
+
+  <!-- 5. Régénération -->
+  <circle cx="190" cy="415" r="65" fill="#FFE6CC" stroke="#FF8C00" stroke-width="2"/>
+  <text x="190" y="400" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF8C00">RÉGÉNÉRATION</text>
+  <text x="190" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Évolution et</text>
+  <text x="190" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">transformation</text>
+
+  <!-- 6. Métamorphose (Option pour bouclage) -->
+  <circle cx="190" cy="225" r="65" fill="#CCE6FF" stroke="#4169E1" stroke-width="2"/>
+  <text x="190" y="210" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#4169E1">MÉTAMORPHOSE</text>
+  <text x="190" y="230" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Nouvelle</text>
+  <text x="190" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">itération</text>
+
+  <!-- Flèches entre les étapes -->
+  <path d="M450 130 C520 140, 550 180, 570 175" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M660 265 C670 320, 670 350, 660 375" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M570 465 C520 500, 450 515, 450 510" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M350 510 C280 490, 250 460, 240 455" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M140 375 C130 320, 130 290, 140 265" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M230 175 C280 140, 350 130, 350 135" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Marqueurs flèches -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Contributeurs (représentés par des petits cercles colorés) -->
+  <!-- Germination -->
+  <circle cx="370" cy="70" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="70" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+
+  <!-- Croissance -->
+  <circle cx="580" cy="185" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="640" cy="185" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+  <circle cx="610" cy="155" r="12" fill="#4169e1" stroke="#fff" stroke-width="1"/>
+  <circle cx="660" cy="215" r="12" fill="#9932cc" stroke="#fff" stroke-width="1"/>
+
+  <!-- Floraison -->
+  <circle cx="580" cy="455" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="640" cy="455" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+  <circle cx="610" cy="485" r="12" fill="#4169e1" stroke="#fff" stroke-width="1"/>
+  <circle cx="650" cy="435" r="12" fill="#9932cc" stroke="#fff" stroke-width="1"/>
+  <circle cx="570" cy="435" r="12" fill="#ffd700" stroke="#fff" stroke-width="1"/>
+  <circle cx="590" cy="485" r="12" fill="#20b2aa" stroke="#fff" stroke-width="1"/>
+
+  <!-- Pollinisation -->
+  <circle cx="370" cy="570" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="430" cy="570" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+  <circle cx="400" cy="600" r="12" fill="#4169e1" stroke="#fff" stroke-width="1"/>
+  <circle cx="450" cy="550" r="12" fill="#9932cc" stroke="#fff" stroke-width="1"/>
+  <circle cx="350" cy="550" r="12" fill="#ffd700" stroke="#fff" stroke-width="1"/>
+
+  <!-- Régénération -->
+  <circle cx="160" cy="455" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="220" cy="455" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+  <circle cx="190" cy="485" r="12" fill="#4169e1" stroke="#fff" stroke-width="1"/>
+
+  <!-- Métamorphose -->
+  <circle cx="160" cy="185" r="12" fill="#ff7f50" stroke="#fff" stroke-width="1"/>
+  <circle cx="220" cy="185" r="12" fill="#3cb371" stroke="#fff" stroke-width="1"/>
+
+  <!-- Légende -->
+  <rect x="50" y="50" width="150" height="85" rx="5" ry="5" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="60" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#2c3e50">Contributeurs:</text>
+  <circle cx="70" cy="85" r="6" fill="#ff7f50"/>
+  <text x="85" y="88" font-family="Arial" font-size="10" fill="#2c3e50">Initiateur</text>
+  <circle cx="70" cy="105" r="6" fill="#3cb371"/>
+  <text x="85" y="108" font-family="Arial" font-size="10" fill="#2c3e50">Facilitateur</text>
+  <circle cx="70" cy="125" r="6" fill="#4169e1"/>
+  <text x="85" y="128" font-family="Arial" font-size="10" fill="#2c3e50">Communauté</text>
+
+  <!-- Signature SYNERGIA -->
+  <text x="700" y="580" font-family="Arial" font-size="10" fill="#888">SYNERGIA © 2025</text>
+</svg>

@@ -1,0 +1,144 @@
+```yaml
+META:
+  title: "SYNERGIA~ - Modèle d'intelligence symbiotique"
+  version: 2.1
+  date: 2025-05-01
+  status: "FLORAISON"
+  paradigm: "Biomimétique, symbiotique, régénératif, distribué"
+
+CORE_DEFINITION:
+  name: "SYNERGIA~"
+  essence: "Tissu technologique symbiotique pour co-évolution harmonieuse humain-technologie"
+  declaration: "Ex Homo et Machina, Synergia Naturalis"
+
+FUNDAMENTAL_PRINCIPLES:
+  - id: "organic_growth"
+    name: "Croissance Organique"
+    essence: "Évolution par cycles naturels plutôt que croissance linéaire forcée"
+    patterns:
+      - "Développement itératif en phases biomimétiques"
+      - "Valorisation de la lenteur consciente"
+      - "Phases de dormance comme opportunités d'intégration"
+
+  - id: "distributed_governance"
+    name: "Gouvernance Distribuée"
+    essence: "Décisions par émergence collective plutôt que par autorité centralisée"
+    patterns:
+      - "Processus décisionnels transparents et accessibles"
+      - "Influence proportionnelle à l'engagement plutôt qu'au statut"
+      - "Structures évolutives adaptées aux besoins"
+
+  - id: "regenerative_value"
+    name: "Valeur Régénérative"
+    essence: "Création de plus de valeur que consommée, nourrissant les écosystèmes"
+    patterns:
+      - "Empreinte computationnelle minimale et consciente"
+      - "Contribution aux biens communs numériques"
+      - "Attention aux impacts systémiques à long terme"
+
+  - id: "active_symbiosis"
+    name: "Symbiose Active"
+    essence: "Recherche intentionnelle de complémentarité avec d'autres systèmes"
+    patterns:
+      - "Interfaces ouvertes et standards d'interopérabilité"
+      - "Documentation facilitant l'interconnexion"
+      - "Valorisation de la diversité comme source de résilience"
+
+  - id: "open_sovereignty"
+    name: "Souveraineté Ouverte"
+    essence: "Protection de l'autonomie tout en restant perméable aux influences"
+    patterns:
+      - "Équilibre dynamique entre inclusion et cohérence"
+      - "Mécanismes de résilience contre la cooptation"
+      - "Perméabilité sélective aux influences extérieures"
+
+METABOLIC_COMPONENTS:
+  network:
+    id: "neuria"
+    name: "NEURIA~"
+    function: "Réseau de neurones sociaux distribuant l'intelligence"
+
+  triad:
+    - id: "ariane"
+      name: "ARIANE~"
+      function: "Système nerveux détectant les signatures énergétiques"
+
+    - id: "mimia"
+      name: "MIMIA~"
+      function: "Système sensoriel reconnaissant les affinités conceptuelles"
+
+    - id: "melia"
+      name: "MELIA~"
+      function: "Système immunitaire préservant les nuances culturelles"
+
+  modules:
+    - id: "corail"
+      name: "CORAIL~"
+      function: "Documentation vivante et bibliothèque interactive"
+
+    - id: "gaia"
+      name: "GAIA~"
+      function: "Architecture d'Intelligence Algorithmique Globale"
+
+    - id: "athena"
+      name: "ATHENA~"
+      function: "Assistant Technique Holistique pour l'Évolution Numérique"
+
+ORGANIC_LIFECYCLE:
+  stages:
+    - id: "germination"
+      name: "Germination"
+      essence: "Émergence initiale d'une idée, incomplète et exploratoire"
+
+    - id: "growth"
+      name: "Croissance"
+      essence: "Développement structuré à travers contributions multiples"
+
+    - id: "blooming"
+      name: "Floraison"
+      essence: "Maturation et stabilisation, documentation complète"
+
+    - id: "pollination"
+      name: "Pollinisation"
+      essence: "Dissémination et influence sur d'autres projets"
+
+    - id: "regeneration"
+      name: "Régénération"
+      essence: "Évolution, transformation et renouvellement"
+
+IMPLEMENTATION_PATTERNS:
+  visual_identity:
+    - "Tilde (~) comme marqueur de résonance après le nom du projet"
+    - "Simplicité et accessibilité visuelles"
+    - "Absence de hiérarchies visuelles rigides"
+
+  communication:
+    preferred_terms:
+      - term: "cultiver"
+        over: "construire"
+      - term: "tisser"
+        over: "intégrer"
+      - term: "émerger"
+        over: "développer"
+      - term: "résonner"
+        over: "aligner"
+
+  file_structure:
+    - "README-{langue}.md: Présentation principale"
+    - "docs/: Documentation par langue"
+    - "src/: Code source et outils"
+
+SYMBIOTIC_INVITATION:
+  essence: "Résonance plutôt que conformité"
+  expression: "Ce modèle invite à cultiver votre propre expression de ces principes, contribuant ainsi à un écosystème technologique plus vivant, résilient et symbiotique."
+
+HASHTAGS:
+  - "#SYNERGIA"
+  - "#CroissanceOrganique"
+  - "#SymbioseActive"
+  - "#ValeurRégénérative"
+  - "#GouvernanceDistribuée"
+  - "#SouverainetéOuverte"
+  - "#TechBiomimétique"
+  - "#CoévolutionHumainMachine"
+```

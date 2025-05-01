@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="qaafGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#5D73A6" />
+    </linearGradient>
+
+    <linearGradient id="harmoniaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1abc9c" />
+      <stop offset="100%" stop-color="#16a085" />
+    </linearGradient>
+
+    <linearGradient id="sophiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9b59b6" />
+      <stop offset="100%" stop-color="#8E44AD" />
+    </linearGradient>
+
+    <linearGradient id="athenaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f1c40f" />
+      <stop offset="100%" stop-color="#f39c12" />
+    </linearGradient>
+
+    <linearGradient id="gaiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="20%" stop-color="#9b59b6" />
+      <stop offset="40%" stop-color="#2ecc71" />
+      <stop offset="60%" stop-color="#f1c40f" />
+      <stop offset="80%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#1abc9c" />
+    </linearGradient>
+
+    <linearGradient id="synergiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2ecc71" />
+      <stop offset="20%" stop-color="#3498db" />
+      <stop offset="40%" stop-color="#9b59b6" />
+      <stop offset="60%" stop-color="#e74c3c" />
+      <stop offset="80%" stop-color="#f1c40f" />
+      <stop offset="100%" stop-color="#1abc9c" />
+    </linearGradient>
+
+    <linearGradient id="tissueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F9688" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#673AB7" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00BCD4" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Patterns -->
+    <pattern id="cellPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="20" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="25" cy="25" r="10" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="25" cy="25" r="3" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+
+    <pattern id="harmoniaPattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M20,0 L60,0 L80,20 L80,60 L60,80 L20,80 L0,60 L0,20 Z" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+      <path d="M40,10 L70,40 L40,70 L10,40 Z" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="40" cy="40" r="5" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+
+    <pattern id="blockchainPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+      <circle cx="10" cy="10" r="2" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+
+    <pattern id="tissuePattern" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M 0,50 Q 25,0 50,50 Q 75,100 100,50" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+      <path d="M 0,0 Q 25,50 50,0 Q 75,-50 100,0" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#1A2634" />
+  <rect width="1000" height="700" fill="url(#tissuePattern)"/>
+
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">SYNERGIA: Écosystème Technologique Symbiotique</text>
+  <text x="500" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cccccc" text-anchor="middle">Co-évolution harmonieuse entre humanité et technologie</text>
+
+  <!-- Central HARMONIA Node -->
+  <circle cx="500" cy="350" r="80" fill="url(#harmoniaGradient)" filter="url(#glow)"/>
+  <circle cx="500" cy="350" r="80" fill="url(#harmoniaPattern)" opacity="0.8"/>
+  <text x="500" y="345" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">HARMONIA</text>
+  <text x="500" y="370" font-family="Arial, sans-serif" font-size="14" fill="#ECF0F1" text-anchor="middle">Langage Symbiotique</text>
+
+  <!-- Tier 1: Primitive Modules (QAAF, etc.) -->
+  <g class="tier1">
+    <!-- Group circle -->
+    <circle cx="500" cy="350" r="220" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+    <text x="500" y="150" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">Niveau Cellulaire</text>
+
+    <!-- QAAF Module -->
+    <circle cx="390" cy="210" r="40" fill="url(#qaafGradient)" />
+    <circle cx="390" cy="210" r="40" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="390" y="210" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">QAAF</text>
+    <text x="390" y="230" font-family="Arial, sans-serif" font-size="10" fill="#ECF0F1" text-anchor="middle">Allocation d'Actifs</text>
+
+    <!-- MHGNA Module -->
+    <circle cx="310" cy="300" r="35" fill="url(#qaafGradient)" opacity="0.9"/>
+    <circle cx="310" cy="300" r="35" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="310" y="300" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">MHGNA</text>
+    <text x="310" y="320" font-family="Arial, sans-serif" font-size="9" fill="#ECF0F1" text-anchor="middle">Analyse de Réseau</text>
+
+    <!-- CHRONOS Module -->
+    <circle cx="330" cy="410" r="35" fill="url(#qaafGradient)" opacity="0.9"/>
+    <circle cx="330" cy="410" r="35" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="330" y="410" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CHRONOS</text>
+    <text x="330" y="430" font-family="Arial, sans-serif" font-size="9" fill="#ECF0F1" text-anchor="middle">Régimes de Marché</text>
+
+    <!-- TENSOR Module -->
+    <circle cx="430" cy="470" r="30" fill="url(#qaafGradient)" opacity="0.9"/>
+    <circle cx="430" cy="470" r="30" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="430" y="470" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">TENSOR</text>
+    <text x="430" y="490" font-family="Arial, sans-serif" font-size="8" fill="#ECF0F1" text-anchor="middle">Optimisation Multi-dim.</text>
+
+    <!-- PHOENIX Module -->
+    <circle cx="540" cy="470" r="30" fill="url(#qaafGradient)" opacity="0.9"/>
+    <circle cx="540" cy="470" r="30" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="540" y="470" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PHOENIX</text>
+    <text x="540" y="490" font-family="Arial, sans-serif" font-size="8" fill="#ECF0F1" text-anchor="middle">Gestion des Risques</text>
+
+    <!-- NEXUS Module -->
+    <circle cx="640" cy="410" r="35" fill="url(#qaafGradient)" opacity="0.9"/>
+    <circle cx="640" cy="410" r="35" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="640" y="410" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">NEXUS</text>
+    <text x="640" y="430" font-family="Arial, sans-serif" font-size="9" fill="#ECF0F1" text-anchor="middle">Interface Marchés</text>
+  </g>
+
+  <!-- Tier 2: SOPHIA Tissue Level -->
+  <g class="tier2">
+    <!-- Group boundary -->
+    <circle cx="500" cy="350" r="310" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+    <text x="320" y="110" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">Niveau Tissulaire</text>
+
+    <!-- SOPHIA Node -->
+    <circle cx="500" cy="150" r="60" fill="url(#sophiaGradient)" />
+    <circle cx="500" cy="150" r="60" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="500" y="150" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SOPHIA</text>
+    <text x="500" y="175" font-family="Arial, sans-serif" font-size="12" fill="#ECF0F1" text-anchor="middle">Intelligence Financière</text>
+  </g>
+
+  <!-- Tier 3: GAIA System Level -->
+  <g class="tier3">
+    <!-- Group boundary -->
+    <circle cx="500" cy="350" r="400" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+    <text x="680" y="110" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">Niveau Systémique</text>
+
+    <!-- GAIA Node -->
+    <circle cx="700" cy="250" r="60" fill="url(#gaiaGradient)" />
+    <circle cx="700" cy="250" r="60" fill="url(#cellPattern)" opacity="0.7"/>
+    <text x="700" y="250" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">GAIA</text>
+    <text x="700" y="275" font-family="Arial, sans-serif" font-size="12" fill="#ECF0F1" text-anchor="middle">Méta-Protocole</text>
+  </g>
+
+  <!-- Tier 4: SYNERGIA Ecosystem Level -->
+  <g class="tier4">
+    <!-- Group boundary -->
+    <ellipse cx="500" cy="350" rx="470" ry="320" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" stroke-dasharray="5,5"/>
+    <text x="500" y="650" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">Niveau Écosystémique</text>
+
+    <!-- SYNERGIA Node -->
+    <circle cx="900" cy="350" r="70" fill="url(#synergiaGradient)" filter="url(#glow)"/>
+    <circle cx="900" cy="350" r="70" fill="url(#tissuePattern)" opacity="0.8"/>
+    <text x="900" y="350" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SYNERGIA</text>
+    <text x="900" y="380" font-family="Arial, sans-serif" font-size="12" fill="#ECF0F1" text-anchor="middle">Tissu Symbiotique</text>
+  </g>
+
+  <!-- ATHENA as Nervous System -->
+  <circle cx="600" cy="500" r="55" fill="url(#athenaGradient)" />
+  <circle cx="600" cy="500" r="55" fill="url(#cellPattern)" opacity="0.7"/>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ATHENA</text>
+  <text x="600" y="525" font-family="Arial, sans-serif" font-size="12" fill="#ECF0F1" text-anchor="middle">Système Nerveux</text>
+
+  <!-- Connection lines -->
+  <!-- Connections to HARMONIA (central node) -->
+  <path d="M 435,230 L 480,320" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 350,320 L 450,350" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 365,420 L 450,370" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 455,450 L 485,400" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 530,445 L 510,400" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 610,395 L 540,365" stroke="#1abc9c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Connection from SOPHIA to HARMONIA -->
+  <path d="M 500,210 L 500,270" stroke="#9b59b6" stroke-width="3" fill="none" opacity="0.7"/>
+
+  <!-- Connection from GAIA to HARMONIA -->
+  <path d="M 650,280 L 560,320" stroke="#3498db" stroke-width="3" fill="none" opacity="0.7"/>
+
+  <!-- Connection from SYNERGIA to HARMONIA -->
+  <path d="M 840,350 L 580,350" stroke="#2ecc71" stroke-width="4" fill="none" opacity="0.7"/>
+
+  <!-- ATHENA connections -->
+  <path d="M 580,450 L 600,450" stroke="#f1c40f" stroke-width="2" fill="none" opacity="0.7" stroke-dasharray="5,3"/>
+  <path d="M 540,350 L 560,420" stroke="#f1c40f" stroke-width="2" fill="none" opacity="0.7" stroke-dasharray="5,3"/>
+  <path d="M 700,300 L 650,450" stroke="#f1c40f" stroke-width="2" fill="none" opacity="0.7" stroke-dasharray="5,3"/>
+  <path d="M 800,380 L 650,480" stroke="#f1c40f" stroke-width="2" fill="none" opacity="0.7" stroke-dasharray="5,3"/>
+
+  <!-- Legend -->
+  <rect x="20" y="600" width="250" height="80" rx="10" ry="10" fill="rgba(26, 38, 52, 0.7)" stroke="#ffffff" stroke-width="1" opacity="0.7"/>
+  <text x="30" y="620" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="bold">Légende</text>
+
+  <circle cx="40" cy="640" r="8" fill="url(#cellPattern)" stroke="#ffffff" stroke-width="1"/>
+  <text x="55" y="645" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Modules Cellulaires</text>
+
+  <circle cx="40" cy="665" r="8" fill="url(#tissuePattern)" stroke="#ffffff" stroke-width="1"/>
+  <text x="55" y="670" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Tissus et Écosystèmes</text>
+
+  <line x1="140" y1="640" x2="170" y2="640" stroke="#1abc9c" stroke-width="2" opacity="0.7"/>
+  <text x="185" y="645" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Communication via HARMONIA</text>
+
+  <line x1="140" y1="665" x2="170" y2="665" stroke="#f1c40f" stroke-width="2" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="185" y="670" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Coordination par ATHENA</text>
+</svg>

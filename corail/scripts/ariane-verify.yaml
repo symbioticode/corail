@@ -1,0 +1,26 @@
+name: ARIANE Verification
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0'  # Hebdomadaire
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Generate ARIANE Signature
+        uses: symbioticode/ariane-action@v1
+        with:
+          scan-depth: full
+          include-interactions: true
+
+      - name: Update CGVS
+        uses: symbioticode/ariane-action/update@v1
+        with:
+          cgvs-path: ./CGVS.md
