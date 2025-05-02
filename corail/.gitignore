@@ -11,7 +11,7 @@ env/
 ENV/
 
 # Fichiers de configuration IDE
-.idea/
+../.idea/
 .vscode/
 *.sublime-project
 *.sublime-workspace
