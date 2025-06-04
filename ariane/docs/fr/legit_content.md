@@ -1,4 +1,4 @@
-Votre question porte sur l'aspect crucial de l'intégrité et de la qualité des liens dans l'écosystème SYNERGIA, à travers le système ARIANE. Analysons les deux cas de figure que vous présentez et comment ARIANE pourrait gérer ces situations.
+La question porte sur l'aspect crucial de l'intégrité et de la qualité des liens dans l'écosystème SYNERGIA, à travers le système ARIANE. Analysons les deux cas de figure que vous présentez et comment ARIANE pourrait gérer ces situations.
 
 ## Lier du contenu légitime à SYNERGIA
 

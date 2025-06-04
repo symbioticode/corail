@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../qaaf/.idea/qaaf-project.iml" filepath="$PROJECT_DIR$/../qaaf/.idea/qaaf-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/symbioticode.iml" filepath="$PROJECT_DIR$/.idea/symbioticode.iml" />
     </modules>
   </component>
